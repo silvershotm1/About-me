@@ -5,19 +5,22 @@
   console.log('The user\'s name is ' + userName + 'and he is funky');
 
   // The start of 5 questions
-  var response1 = prompt('Do I have three cats?').toLowerCase();
-  var answer1 = 'yes';
+  var response1 = prompt('Do I chew gum often?').toLowerCase();
+  var answer1 = 'no';
   if (response1 === answer1 || response1 === answer1[0]) {
-    alert('You are correct, ' + userName + ' ! My cats are Pants, Jones, and Taylor');
-  } else {
+    alert('You are correct, ' + userName + ' ! On few occasions and not everyday');
+  } else if (response1 === !answer1 || response1 === !answer[0]) {
     alert('Yes, ' + userName + '. I really do have 3 cats!');
-    console.log('You responded with answering' + response1);
   }
+    else {
+    prompt('Please type-out yes or abbr y / n ');
+  }
+
   var response2 = prompt('Do I like Indian Cuisine?').toLowerCase();
   var answer2 = 'no';
 
   if (response2 === answer2 || response2 === answer2[0]) {
-    alert(+ userName + '! I don\'t like Indian Cuisine!');
+    alert(userName + '! I don\'t like Indian Cuisine!');
   } else {
     alert('That\'s is correct ' + userName + '! I really really don\'t like it!');
     console.log('You replied with answering' + response2);
