@@ -80,7 +80,7 @@ for (var i = 0; i < 4; i++) {
     alert ('Come back down ' + userName + '! You are too high up!');
   }
     else {
-    alert('You must be super smart ' + userName + '! ' + x + ' is correct! 11 miles up!');
+    alert('Correct, you must be super smart ' + userName + '! ' + x + ' is correct! 11 miles up!');
   }
 }
 console.log(userName + ' chose ' + response6 + ' as the 6th response.');
@@ -98,3 +98,10 @@ for (var i = 0; i < 5; i++) {
   }
 }
 console.log(myStates + ' are the states I have lived in.');
+
+//
+tally = 0;
+while (tally < myStates.length) {
+  console.log(myStates[tally]);
+  tally += 1;
+}
