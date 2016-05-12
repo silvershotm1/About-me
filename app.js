@@ -84,3 +84,17 @@ for (var i = 0; i < 4; i++) {
   }
 }
 console.log(userName + ' chose ' + response6 + ' as the 6th response.');
+
+// Start the array for 7th question with 6 tries.
+var myStates = ['alabama', 'texas', 'kentucky', 'tennessee'];
+for (var i = 0; i < 5; i++) {
+  var response7 = (prompt('Where have I lived in the United States?'));
+  if (response7 === myStates[0] || response7 === myStates[1] || response7 === myStates[2] || response7 === myStates[3]) {
+    alert ('Congrats, you are correct ' + userName);
+  } else if (response7 !== myStates[0] || response7 !== myStates[1] || response7 !== myStates[2] || response7 !== myStates[3]) {
+    alert ('That\'s a shame ' + userName + ' ! ');
+  } else {
+    alert('You have no more tries ' + userName + ' . I have lived in Alabama, Texas, Kentucky and Tennessee.');
+  }
+}
+console.log(myStates + ' are the states I have lived in.');
