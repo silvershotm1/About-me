@@ -1,14 +1,14 @@
 var userName = prompt('Hi, thank you for visiting my page! What is your name?');
 alert('Nice to meet you, ' + userName + '. I\'m going to ask you some questions about me.');
 console.log('The user\'s name is ' + userName + ' and he is funky');
-//
-//   // The start of 5 questions
-//
-//   //if answer1 then yes
-//   //if answer2 then no
-//   //else prompt for answer
-//
-//   //response1
+
+   // The start of 5 questions
+
+   //if answer1 then yes
+   //if answer2 then no
+   //else prompt for answer
+
+  //response1
 var response1 = prompt('Do I chew gum often?').toLowerCase();
 var answer1 = 'yes';
 var answer2 = 'no';
@@ -72,7 +72,7 @@ console.log(userName + ' chose ' + response5 + ' as the 5th response.');
 
 // Start the for/while loop for 6th question with 4 tries
 var x = 11;
-for (var i = 0; i < 4; i++) {
+for (var i = 0; i < 3; i++) {
   var response6 = parseInt(prompt('How many miles in the sky is the stratosphere?'));
   if (response6 < x) {
     alert('I am sorry ' + userName + '. Your answer ' + response6 + ' is too low!');
