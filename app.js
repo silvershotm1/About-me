@@ -4,10 +4,6 @@ console.log('The user\'s name is ' + userName + ' and he is funky');
 
   // The start of 5 questions
 
-  //if answer1 then yes
-  //if answer2 then no
-  //else prompt for answer
-
 var tally = 0;
 var answer1 = 'yes';
 var answer2 = 'no';
@@ -97,7 +93,7 @@ function question5() {
 question5();
 
 // Start the for/while loop for 6th question with 4 tries
-//QUESTION 6 STILL NEEDS SOME TWEAKS TO GET CORRECT RESPONSE WORKING
+
 
 function question6() {
   var q6answer = 11;
@@ -110,13 +106,15 @@ function question6() {
     } else if (response6 > q6answer) {
       alert ('Come back down ' + userName + '! You are too high up!');
       q6tries--;
-    } else {
+    } else if (response6 === q6answer) {
       alert('Correct, you must be super smart ' + userName + '! ' + q6answer + ' is correct! 11 miles up!');
       tally++;
       q6tries = 0;
+    } else {
+      alert('Come on now ' + userName + ' ! I need for you to give me a number!');
     }
+    console.log(userName + ' chose ' + response6 + ' as the 6th response.');
   }
-  console.log(userName + ' chose ' + response6 + ' as the 6th response.');
 }
 
 question6();
@@ -149,5 +147,4 @@ function question7() {
 }
 
 question7();
-
-alert('Thanks for taking the quiz! Your total score is ' + tally + ' / 7');
+alert('Thanks for taking the time to take my quiz! Your total score is ' + tally + ' / 7');
