@@ -94,7 +94,6 @@ question5();
 
 // Start the for/while loop for 6th question with 4 tries
 
-
 function question6() {
   var q6answer = 11;
   var q6tries = 4;
