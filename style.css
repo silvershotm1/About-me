@@ -1,37 +1,53 @@
 html {
+
+}
+
+body {
   background-color: #093DE8;
+
 }
 
 h1 {
   color:black;
   text-decoration: underline;
+  top:30px;
 
 }
 
+h2 {
+  text-decoration: underline;
+}
+
 div.wrapper {
+  position: relative;
   border: solid black;
-  border-radius: 20%;
+  border-radius: 5%;
   width:800px;
-  height:900px;
+  height:1000px;
   margin:0 auto;
   background-color: #FFFFCC;
 
 }
-div.movies {
-  border: 1px solid black;
-  width:200px;
-  height:300px;
-  margin: 0 auto;
-  background-color: silver;
-  text-shadow:
-  padding-right:2px;
-  float: right;
+
+#summary {
+  position: relative;
 
 }
-div.footer {
+
+#movielist {
+  poition:absolute;
+  border: 1px solid black;
+  width:175px;
+  height:280px;
+  margin: 0 auto;
+  background-color: silver;
+  padding-right:20px;
+  bottom: 100px;
+}
+.footer {
   position:relative;
   border: 2px solid black;
-  width: 200px;
+  width: 400px;
   height: 50px;
   text-align:center;
   margin: 0 auto;
@@ -39,6 +55,5 @@ div.footer {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
   padding: 10px;
-
 
 }
