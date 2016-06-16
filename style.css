@@ -3,57 +3,233 @@ html {
 }
 
 body {
-  background-color: #093DE8;
+  height: 100%;
+  background-image: url(images/Wood-Texture-Backgrounds.jpg);
+  /*background-image: url(images/wood.jpg);*/
+
+  background-size:cover;
 
 }
 
 h1 {
   color:black;
-  text-decoration: underline;
   top:30px;
 
 }
 
 h2 {
+
+}
+
+h4 {
+  /*line-height: 10px*/
+}
+
+a {
+  text-decoration: none;
+}
+p {
+  display: flex;
+  flex-direction: column;
+}
+p.contact {
+
+}
+.hline {
+  width:100%;
+  height:1px;
+  background: #502900;
+}
+.spacer {
+  width:100%;
+  height:15px;
+}
+div.wrapper {
+  position: relative;
+  border: 5px solid black;
+  border-radius: 5%;
+  width:800px;
+  height:100%;
+  margin:0 auto;
+  background-image: url(images/paper-main.jpg);
+  padding: 5px 5px 5px 5px;
+
+}
+
+div.wrapper-intro {
+  text-align: center;
+
+}
+
+hgroup.myinfo {
+  line-height: 1px;
+}
+
+.summary {
+  position: relative;
+
+}
+
+span.occ {
+  color:red;
+
+}
+
+span.loc {
+  font-style: italic;
+
+}
+div.education {
+
+}
+
+ul ~ li {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+div.workexp {
+
+}
+
+div.column-section {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+div.column-section p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/paper-main.jpg);
+  /*background-image: url(images/Wood-Texture-Backgrounds.jpg);*/
+  font-weight: bold;
+  /*text-decoration: underline;*/
+  border: 2px solid #502900;
+}
+
+div.column-sectionp.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*background-image: url(images/paper-main.jpg);*/
+  /*background-image: url(images/Wood-Texture-Backgrounds.jpg);*/
+  font-weight: bold;
   text-decoration: underline;
 }
 
-div.wrapper {
-  position: relative;
-  border: solid black;
-  border-radius: 5%;
-  width:800px;
-  height:1000px;
-  margin:0 auto;
-  background-color: #FFFFCC;
+div.circle {
+    border-radius: 100%;
+    margin: 0 4% 0 4%;
+    min-width: 13 0px;
+    min-height: 130px;
+    border: 3px solid #966F33;
+    /*background-color: #ff6000;*/
+
+    background-image: url("images/me2.jpg");
+    background-size: cover;
+  }
+div.circle img {
+  width: 120px;
+  height: 120px;
 
 }
-
-#summary {
-  position: relative;
-
+div.column1 {
+  poition:absolute;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width:175px;
+  height:280px;
+  margin: 0 auto;
+  /*background-color: gray;*/
+  background-image: url(images/wood2.jpg);
+  padding-right:20px;
+  padding-left: 20px;
+  bottom: 100px;
+  box-shadow: 10px 5px 5px #502900;
 }
 
-#movielist {
+div.column2 {
   poition:absolute;
   border: 1px solid black;
   width:175px;
   height:280px;
   margin: 0 auto;
-  background-color: silver;
+  /*background-color: gray;*/
+  background-image: url(images/wood2.jpg);
   padding-right:20px;
+  padding-left: 20px;
   bottom: 100px;
+  box-shadow: 10px 5px 5px #502900;
+}
+
+div.column3 {
+  poition:absolute;
+  border: 1px solid black;
+  width:175px;
+  height:280px;
+  margin: 0 auto;
+  /*background-color: gray;*/
+  background-image: url(images/wood2.jpg);
+  /*background-size: 200px;*/
+  padding-right:20px;
+  padding-left: 20px;
+  bottom: 100px;
+  box-shadow: 10px 5px 5px #502900;
 }
 .footer {
   position:relative;
   border: 2px solid black;
-  width: 400px;
+  width: 75%;
   height: 50px;
   text-align:center;
   margin: 0 auto;
-  background-color:grey;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  background-color:#966F33;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   padding: 10px;
+  line-height: 12px;
 
+}
+.circle img {
+    position:absolute;
+    left:0px;
+    top:0;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+#wood {
+    background-color: lightblue;
+}
+#f2 {
+    -webkit-animation-delay: -4s;
+    background-color: yellow;
+}
+#f3 {
+    -webkit-animation-delay: -2s;
+    background-color: lightgreen;
 }
