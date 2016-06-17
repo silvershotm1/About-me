@@ -2,6 +2,10 @@ html {
 
 }
 
+a {
+  color: #000040;
+}
+
 body {
   height: 100%;
   background-image: url(images/Wood-Texture-Backgrounds.jpg);
@@ -139,6 +143,8 @@ div.circle img {
 }
 
 .pictures img {
+  border: 5px solid #966F33;
+  border-style:ridge;
   position:absolute;
   width: 170px;
   height: 130px;
