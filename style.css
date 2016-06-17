@@ -22,7 +22,7 @@ h2 {
 }
 
 h4 {
-  /*line-height: 10px*/
+  /*line-height: 5px*/
 }
 
 a {
@@ -62,7 +62,7 @@ div.wrapper-intro {
 }
 
 hgroup.myinfo {
-  line-height: 1px;
+  line-height: 15px;
 }
 
 .summary {
@@ -120,21 +120,37 @@ div.column-sectionp.contact {
 }
 
 div.circle {
+  position: relative;
     border-radius: 100%;
     margin: 0 4% 0 4%;
-    min-width: 13 0px;
+    min-width: 130px;
     min-height: 130px;
     border: 3px solid #966F33;
-    /*background-color: #ff6000;*/
-
-    background-image: url("images/me2.jpg");
+    background-image: url("images/me2.jpg"), url(images/wood.jpg);
     background-size: cover;
+
+
   }
 div.circle img {
-  width: 120px;
-  height: 120px;
+  position: absolute;
+  width: 150px;
+  height: 150px;
 
 }
+
+.pictures img {
+  position:absolute;
+  width: 170px;
+  height: 130px;
+  margin: 0px auto;
+  -webkit-animation-name: fade;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 6s;
+  animation-name: fade;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+}
+
 div.column1 {
   poition:absolute;
   display: flex;
@@ -169,7 +185,7 @@ div.column3 {
   poition:absolute;
   border: 1px solid black;
   width:175px;
-  height:280px;
+  /*height:280px;*/
   margin: 0 auto;
   /*background-color: gray;*/
   background-image: url(images/wood2.jpg);
@@ -193,18 +209,6 @@ div.column3 {
   border-top-right-radius: 30px;
   padding: 10px;
   line-height: 12px;
-
-}
-.circle img {
-    position:absolute;
-    left:0px;
-    top:0;
-    -webkit-animation-name: fade;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 6s;
-    animation-name: fade;
-    animation-iteration-count: infinite;
-    animation-duration: 6s;
 }
 
 @-webkit-keyframes fade {
@@ -222,14 +226,15 @@ div.column3 {
     100% {opacity: 0;}
 }
 
-#wood {
-    background-color: lightblue;
+#me1 {
+    /*background-color: lightblue;*/
+    /*background-image: url(images/wood.jpg);*/
 }
-#f2 {
+#me2 {
     -webkit-animation-delay: -4s;
     background-color: yellow;
 }
-#f3 {
+#me3 {
     -webkit-animation-delay: -2s;
     background-color: lightgreen;
 }
