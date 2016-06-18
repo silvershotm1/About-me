@@ -2,17 +2,14 @@ html {
 
 }
 
-a {
-  color: #000040;
-}
 
 body {
   height: 100%;
   background-image: url(images/Wood-Texture-Backgrounds.jpg);
-  /*background-image: url(images/wood.jpg);*/
   background-size:cover;
 
 }
+/*///////////////////////// HEADERS, LINKS AND PARAGRAPHS   */
 
 h1 {
   color:black;
@@ -29,28 +26,46 @@ h4 {
 }
 
 a {
+  color: #000040;
   text-decoration: none;
 }
+
 p {
   display: flex;
   flex-direction: column;
-}
-p.contact {
 
 }
+
+p.indent {
+  text-indent: 20px;
+}
+
+ol {
+  background-image: url(images/paper-main.jpg);
+  font-weight: bold;
+  /*text-decoration: underline;*/
+  border: 2px solid #502900;
+}
+/*///////////////////////// LINES AND SPACING   */
+
 .hline {
   width:100%;
   height:1px;
   background: #502900;
+
 }
+
 .spacer {
   width:100%;
   height:15px;
+
 }
+/*///////////////////////// THE PAGE WRAPPER   */
+
 div.wrapper {
   position: relative;
-  border: 5px solid black;
-  border-radius: 5%;
+  border: 5px solid #502900;
+  border-radius: 8%;
   width:800px;
   height:100%;
   margin:0 auto;
@@ -66,12 +81,15 @@ div.wrapper-intro {
 
 hgroup.myinfo {
   line-height: 15px;
+
 }
+/*////////////////////////////  SUMMARY SECTION    */
 
 .summary {
   position: relative;
 
 }
+/*///////////////////////// SPAN TAG   */
 
 span.occ {
   color:red;
@@ -82,6 +100,13 @@ span.loc {
   font-style: italic;
 
 }
+
+span.listyle {
+  text-decoration: underline;
+  font-weight: bold;
+
+}
+
 div.education {
 
 }
@@ -94,6 +119,7 @@ ul ~ li {
 div.workexp {
 
 }
+/*///////////////////////// COLUMNS SECTION    */
 
 div.column-section {
   display: flex;
@@ -146,25 +172,25 @@ div.circle img {
   border-style:ridge;
   position:absolute;
   width: 170px;
-  height: 130px;
+  height: 120px;
   margin: 0px auto;
   -webkit-animation-name: fade;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 6s;
+  -webkit-animation-iteration-count: 4;
+  -webkit-animation-duration: 12s;
   animation-name: fade;
-  animation-iteration-count: infinite;
+  animation-iteration-count:4;
   animation-duration: 6s;
 }
 
 div.column1 {
   poition:absolute;
+  /*line-height: 18px;*/
   display: flex;
   flex-direction: column;
   border: 1px solid black;
   width:175px;
-  height:280px;
+  height:300px;
   margin: 0 auto;
-  /*background-color: gray;*/
   background-image: url(images/wood2.jpg);
   padding-right:20px;
   padding-left: 20px;
@@ -176,9 +202,8 @@ div.column2 {
   poition:absolute;
   border: 1px solid black;
   width:175px;
-  height:280px;
+  /*height:280px;*/
   margin: 0 auto;
-  /*background-color: gray;*/
   background-image: url(images/wood2.jpg);
   padding-right:20px;
   padding-left: 20px;
@@ -192,17 +217,17 @@ div.column3 {
   width:175px;
   /*height:280px;*/
   margin: 0 auto;
-  /*background-color: gray;*/
   background-image: url(images/wood2.jpg);
-  /*background-size: 200px;*/
   padding-right:20px;
   padding-left: 20px;
   bottom: 100px;
   box-shadow: 10px 5px 5px #502900;
 }
+/*///////////////////////// FOOTER   */
+
 .footer {
   position:relative;
-  border: 2px solid black;
+  border: 2px solid #502900;
   width: 75%;
   height: 50px;
   text-align:center;
@@ -215,6 +240,8 @@ div.column3 {
   padding: 10px;
   line-height: 12px;
 }
+/*///////////////////////// FADE OF 3 IMAGES    */
+
 
 @-webkit-keyframes fade {
     0% {opacity: 0;}
@@ -230,6 +257,7 @@ div.column3 {
     53% {opacity: 0;}
     100% {opacity: 0;}
 }
+/*///////////////////////// IMAGES INSIDE COLUMN 1    */
 
 #me1 {
     /*background-color: lightblue;*/
