@@ -1,5 +1,5 @@
 # about-me
-Code 201 Day 2 Project
+An about me page
 
 5/12/2016
 # George Holmes -DRIVER
