@@ -28,13 +28,25 @@ h4 {
 a {
   color: #000040;
   text-decoration: none;
+
 }
 
-p {
+a:hover {
+  color: blue;
+
+}
+
+a:visited {
+  color: purple;
+  text-decoration: none;
+
+}
+
+/*p {
   display: flex;
   flex-direction: column;
 
-}
+}*/
 
 p.indent {
   text-indent: 20px;
@@ -43,8 +55,9 @@ p.indent {
 ol {
   background-image: url(images/paper-main.jpg);
   font-weight: bold;
-  /*text-decoration: underline;*/
-  border: 2px solid #502900;
+  border: 3px solid #502900;
+  border-style: outset;
+  /*padding-right: 10px;*/
 }
 /*///////////////////////// LINES AND SPACING   */
 
@@ -52,6 +65,15 @@ ol {
   width:100%;
   height:1px;
   background: #502900;
+
+}
+
+.hline-box {
+  width: 75%;
+  border: 3px solid #502900;
+  border-style: ridge;
+  display: flex;
+  margin: 0 auto;
 
 }
 
@@ -135,7 +157,9 @@ div.column-section p {
   /*background-image: url(images/Wood-Texture-Backgrounds.jpg);*/
   font-weight: bold;
   /*text-decoration: underline;*/
-  border: 2px solid #502900;
+  /*border-style: ridge;*/
+  border: 3px solid #502900;
+  border-style:outset;
 }
 
 div.column-sectionp.contact {
@@ -168,8 +192,8 @@ div.circle img {
 }
 
 .pictures img {
-  border: 5px solid #966F33;
-  border-style:ridge;
+  border: 5px solid #502900;
+  border-style:outset;
   position:absolute;
   width: 170px;
   height: 120px;
@@ -183,13 +207,13 @@ div.circle img {
 }
 
 div.column1 {
-  poition:absolute;
+  position: static;
   /*line-height: 18px;*/
   display: flex;
   flex-direction: column;
   border: 1px solid black;
   width:175px;
-  height:300px;
+  /*height:300px;*/
   margin: 0 auto;
   background-image: url(images/wood2.jpg);
   padding-right:20px;
@@ -199,7 +223,7 @@ div.column1 {
 }
 
 div.column2 {
-  poition:absolute;
+  position: static;
   border: 1px solid black;
   width:175px;
   /*height:280px;*/
@@ -212,7 +236,7 @@ div.column2 {
 }
 
 div.column3 {
-  poition:absolute;
+  position: static  ;
   border: 1px solid black;
   width:175px;
   /*height:280px;*/
@@ -260,14 +284,14 @@ div.column3 {
 /*///////////////////////// IMAGES INSIDE COLUMN 1    */
 
 #me1 {
-    /*background-color: lightblue;*/
     /*background-image: url(images/wood.jpg);*/
 }
+
 #me2 {
     -webkit-animation-delay: -4s;
-    background-color: yellow;
+
 }
 #me3 {
     -webkit-animation-delay: -2s;
-    background-color: lightgreen;
+
 }
